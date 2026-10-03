@@ -20,6 +20,8 @@ export default buildConfig({
     },
   },
   collections: [Users, Media, Countries],
+  cors: ['https://app-one-eta-three.vercel.app'],
+  csrf: ['https://app-one-eta-three.vercel.app'],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
